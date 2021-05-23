@@ -1,0 +1,90 @@
+:root {
+   --yellow: #FFD500;
+   --blue1: #003F88;
+   --blue2: #00296B;
+   --white: #F7F7F7;
+   font-size: 12px;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   overflow-x: hidden;
+   background-color: var(--white);
+}
+
+a {
+   text-decoration: none;
+}
+
+.kisah-nabi .container {
+   width: 100%;
+   max-width: 400px;
+}
+
+.nama-nabi {
+   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .15);
+   margin-bottom: 1.8rem;
+   border-radius: 6px;
+   background-color: #ffffff;
+}
+
+.highlight {
+   display: -webkit-box;
+   -webkit-line-clamp: 5;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Breakpoints */
+@media (min-width: 576px) {
+   .kisah-nabi .container {
+      width: 80%;
+      max-width: 100%;
+   }
+}
+
+@media (min-width: 768px) {
+   :root {
+      font-size: 14px;
+   }
+}
+
+@media (min-width: 992px) {
+   :root {
+      font-size: 16px;
+   }
+
+   .kisah-nabi .container {
+      width: 80%;
+      max-width: 100%;
+   }
+}
+
+@media (min-width: 1200px) {}

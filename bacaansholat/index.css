@@ -1,0 +1,131 @@
+:root {
+   --yellow: #FFD500;
+   --blue1: #003F88;
+   --blue2: #00296B;
+   --white: #F7F7F7;
+   font-size: 12px;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   overflow-x: hidden;
+   background-color: var(--white);
+}
+
+a {
+   text-decoration: none;
+}
+
+.cari-bacaan {
+   width: 100%;
+}
+
+.bacaan {
+   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .15);
+   margin-bottom: 1.8rem;
+   border-radius: 6px;
+   background-color: #ffffff;
+   position: relative;
+   color: var(--blue2);
+}
+
+.latin-bacaan,
+.arti-bacaan {
+   width: 100%;
+}
+
+.info-bacaan {
+   height: 0;
+   transition: .3s;
+}
+
+
+.bacaan .expand-detail {
+   width: 100%;
+   cursor: pointer;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   right: 50%;
+   transform: translateX(-50%);
+   text-align: center;
+}
+
+.bacaan .expand-detail img {
+   width: 1.4rem;
+   margin: .7rem 0;
+   transform: rotateX(180deg);
+   transition: .3s;
+}
+
+.bacaan .expand-detail.open img {
+   transform: rotateX(0);
+}
+
+.daftar-niat-sholat .niat:hover {
+   background-color: #eaeaea;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Breakpoints */
+@media (min-width: 576px) {
+   .cari-bacaan {
+      width: 100%;
+      max-width: 300px;
+   }
+
+   .latin-bacaan,
+   .arti-bacaan {
+      width: 90%;
+   }
+}
+
+@media (min-width: 768px) {
+   :root {
+      font-size: 14px;
+   }
+
+   .cari-bacaan {
+      width: 80%;
+      max-width: 400px;
+   }
+}
+
+@media (min-width: 992px) {
+   :root {
+      font-size: 16px;
+   }
+
+   .latin-bacaan,
+   .arti-bacaan {
+      width: 70%;
+   }
+}
+
+@media (min-width: 1200px) {}

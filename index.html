@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>Islamic Bit - Penuhi Kebutuhan Islamimu Disini</title>
+  <meta name="title" content="Islamic Bit - Penuhi Kebutuhan Islamimu Disini">
+  <meta name="description"
+    content="Dengan Islamic Bit, kamu dapat membaca Al-Quran secara online. Beberapa fitur menarik yang lain diantaranya, jadwal sholat seluruh daerah di Indonesia, membaca kisah Nabi dan Rasul, membaca Asmaul Husna, membaca Hadits-Hadits Rasulullah, membaca Doa-Doa Harian, membaca bacaan Sholat dan Tahlil, mendapatkan pencerahan dari ayat-ayat Al-Quran, serta mendapatkan quotes islami setiap saat. Islamic Bit dapat digunakan oleh seluruh orang, mulai dari masyarakat umum, guru dan siswa, traveler atau turis,  serta para pengusaha dan pekerja.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://islamic-bit.netlify.app/">
+  <meta property="og:title" content="Islamic Bit - Penuhi Kebutuhan Islamimu Disini">
+  <meta property="og:description"
+    content="Dengan Islamic Bit, kamu dapat membaca Al-Quran secara online. Beberapa fitur menarik yang lain diantaranya, jadwal sholat seluruh daerah di Indonesia, membaca kisah Nabi dan Rasul, membaca Asmaul Husna, membaca Hadits-Hadits Rasulullah, membaca Doa-Doa Harian, membaca bacaan Sholat dan Tahlil, mendapatkan pencerahan dari ayat-ayat Al-Quran, serta mendapatkan quotes islami setiap saat. Islamic Bit dapat digunakan oleh seluruh orang, mulai dari masyarakat umum, guru dan siswa, traveler atau turis,  serta para pengusaha dan pekerja.">
+  <meta property="og:image" content="img/islamic-bit.png">
+  <!-- Facebook and WhatsApp Meta Tag Open Graph by igniel.com -->
+  <b:if cond='data:view.isHomepage'>
+    <b:if cond='data:view.isPost'>
+      <b:if cond='data:view.isPage'>
+        <b:if cond='data:blog.url'>
+          <meta expr:content='data:blog.url' property='og:url' />
+        </b:if>
+        <meta expr:content='data:blog.title' property='og:site_name' />
+        <b:if cond='data:blog.pageName'>
+          <meta expr:content='data:blog.pageName' property='og:title' />
+        </b:if>
+      </b:if>
+    </b:if>
+  </b:if>
+  <meta content='blog' property='og:type' />
+  <b:if cond='data:blog.postImageUrl'>
+    <meta expr:content='data:blog.postImageUrl' property='og:image' />
+    <b:else />
+    <b:if cond='data:blog.postImageThumbnailUrl'>
+      <meta expr:content='data:blog.postThumbnailUrl' property='og:image' />
+      <b:else />
+      <meta content='img/islamic-bit.jpg' property='og:image' />
+    </b:if>
+  </b:if>
+  <b:if cond='data:blog.metaDescription'>
+    <meta expr:content='data:blog.metaDescription' property='og:description' />
+    <b:else />
+    <meta expr:content='data:post.snippet' property='og:description' />
+  </b:if>
+  <meta expr:content='data:blog.title' property='og:site_name' />
+  <meta content='https://www.facebook.com/1613894795' property='article:author' />
+  <meta content='https://www.facebook.com/1613894795' property='article:publisher' />
+  <meta content='1613894795' property='fb:admins' />
+  <meta content='en_US' property='og:locale' />
+  <meta content='en_GB' property='og:locale:alternate' />
+  <meta content='id_ID' property='og:locale:alternate' />
+  <link itemprop="thumbnailUrl" href="img/islamic-bit.jpg">
+  <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject"></span>
+  <link itemprop="url" href="img/islamic-bit.jpg">
+
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://islamic-bit.netlify.app/">
+  <meta property="twitter:title" content="Islamic Bit - Penuhi Kebutuhan Islamimu Disini">
+  <meta property="twitter:description"
+    content="Dengan Islamic Bit, kamu dapat membaca Al-Quran secara online. Beberapa fitur menarik yang lain diantaranya, jadwal sholat seluruh daerah di Indonesia, membaca kisah Nabi dan Rasul, membaca Asmaul Husna, membaca Hadits-Hadits Rasulullah, membaca Doa-Doa Harian, membaca bacaan Sholat dan Tahlil, mendapatkan pencerahan dari ayat-ayat Al-Quran, serta mendapatkan quotes islami setiap saat. Islamic Bit dapat digunakan oleh seluruh orang, mulai dari masyarakat umum, guru dan siswa, traveler atau turis,  serta para pengusaha dan pekerja.">
+  <meta property="twitter:image" content="img/islamic-bit.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E24LBTSFHF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E24LBTSFHF');
+  </script>
+
+  <!-- CSS Source -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark fixed-top py-3" style="color: var(--white); background-color: var(--blue1);">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold" href="#"
+        style="display: grid; grid-template-columns: 1fr 20px; align-items: center; gap: 10px;">
+        <span style="letter-spacing: 3px; font-size: 1.5rem; font-weight: 500;">Islamic Bit</span>
+        <img src="img/muslim.webp" style="width: 20px;">
+      </a>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Header -->
+  <header class="header py-5" style="color: var(--white); background-color: var(--blue1); height: 80vh; max-height: 700px; display: flex;
+      align-items: center; position: relative;">
+    <div class="container mx-auto px-4 px-sm-0 text-center">
+      <div class="text-header">
+        <h1 class="mx-auto mb-3">
+          Lebih Seru dan Mudah Dengan <span style="font-weight: 700;">Islamic Bit</span>
+        </h1>
+        <h5 class="mx-auto mb-5" style="letter-spacing: 1px;">
+          <p class="my-2">Penuhi Kebutuhan Islamimu Setiap Hari Disini.</p>
+          <p class="my-2">Akses Kapan Saja Dimana Saja</p>
+        </h5>
+        <a href="#menu"
+          style="background-color: var(--yellow); font-weight: 700; letter-spacing: 1px; font-size: 1.1rem; color: var(--blue2); padding: .8rem 2rem; border-radius: 6px;">Ayo
+          Mulai
+        </a>
+      </div>
+      <div class="widget-header p-4">
+
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Main Menu -->
+  <section id="menu" class="main-menu py-5">
+    <div class="container mx-auto py-5">
+      <h2 class="mb-5" style="font-weight: 700; text-align: center; color: var(--blue2);">Pilih Kebutuhan Islamimu
+      </h2>
+      <div class="menu-wrapper row row-cols-2 row-cols-sm-3 row-cols-lg-4 g-4 mx-auto justify-content-center">
+        <div class="col">
+          <a href="alquran/" style="display: block;">
+            <div class="px-3 py-4 text-center"
+              style="background-color: var(--blue1); color: var(--white); border-radius: 6px; cursor: pointer;">
+              <img src="img/quran.webp" class="img-fluid mb-3" style="width: 4rem;">
+              <h6 style="font-weight: 600;">Al-Quran</h6>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="asmaulhusna/" style="display: block;">
+            <div class="px-3 py-4 text-center"
+              style="background-color: var(--blue1); color: var(--white); border-radius: 6px; cursor: pointer;">
+              <img src="img/allah.webp" class="img-fluid mb-3" style="width: 4rem;">
+              <h6 style="font-weight: 600;">Asmaul Husna</h6>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="doaharian/" style="display: block;">
+            <div class="px-3 py-4 text-center"
+              style="background-color: var(--blue1); color: var(--white); border-radius: 6px; cursor: pointer;">
+              <img src="img/praying.webp" class="img-fluid mb-3" style="width: 4rem;">
+              <h6 style="font-weight: 600;">Doa Harian</h6>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="hadits/" style="display: block;">
+            <div class="px-3 py-4 text-center"
+              style="background-color: var(--blue1); color: var(--white); border-radius: 6px; cursor: pointer;">
+              <img src="img/hadits.webp" class="img-fluid mb-3" style="width: 4rem;">
+              <h6 style="font-weight: 600;">Hadits Rasul</h6>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="kisahnabi/" style="display: block;">
+            <div class="px-3 py-4 text-center"
+              style="background-color: var(--blue1); color: var(--white); border-radius: 6px; cursor: pointer;">
+              <img src="img/lighter.webp" class="img-fluid mb-3" style="width: 4rem;">
+              <h6 style="font-weight: 600;">Kisah Nabi & Rasul</h6>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="tahlil/" style="display: block;">
+            <div class="px-3 py-4 text-center"
+              style="background-color: var(--blue1); color: var(--white); border-radius: 6px; cursor: pointer;">
+              <img src="img/tasbih.webp" class="img-fluid mb-3" style="width: 4rem;">
+              <h6 style="font-weight: 600;">Bacaan Tahlil</h6>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="sholawat/" style="display: block;">
+            <div class="px-3 py-4 text-center"
+              style="background-color: var(--blue1); color: var(--white); border-radius: 6px; cursor: pointer;">
+              <img src="img/muhammad.webp" class="img-fluid mb-3" style="width: 4rem;">
+              <h6 style="font-weight: 600;">Sholawat Nabi</h6>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="bacaansholat/" style="display: block;">
+            <div class="px-3 py-4 text-center"
+              style="background-color: var(--blue1); color: var(--white); border-radius: 6px; cursor: pointer;">
+              <img src="img/prayer.webp" class="img-fluid mb-3" style="width: 4rem;">
+              <h6 style="font-weight: 600;">Bacaan Sholat</h6>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Main Menu -->
+
+  <!-- Waktu Sholat -->
+  <section class="waktu-sholat py-5" style="background-color: var(--blue1);">
+    <div class="container mx-auto py-3">
+      <div class="text-center mb-5" style="color: var(--white);">
+        <h2 class="mb-3" style="font-weight: 700;">
+          Waktu Sholat Daerah
+          <span style="display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; cursor:
+            pointer;" data-bs-toggle="modal" data-bs-target="#daftarKota">
+            <span class="kota-pilihan" data-id-kota="667">Kota Jakarta</span>
+            <span class="ganti-kota ms-3 fas fa-caret-down" style="font-size: 1.2rem;"></span>
+          </span>
+        </h2>
+        <div class="tanggal-wrapper" style="display: flex; justify-content: center; align-items: center;">
+          <span class="prev-date fas fa-arrow-left px-3" style="cursor: pointer;"></span>
+          <div class="tanggal mx-4">
+            <h5 class="masehi mb-1" style="font-weight: 600;"></h5>
+            <h6 class="hijriyah" style="opacity: .6;"></h6>
+          </div>
+          <span class="next-date fas fa-arrow-right px-3" style="cursor: pointer;"></span>
+        </div>
+      </div>
+      <div class="jadwal-wrapper row row-cols-2 row-cols-sm-3 row-cols-lg-4 g-4 mx-auto g-4 justify-content-center"
+        style="color: var(--blue2);">
+        <div class="col">
+          <div class="jadwal imsak row p-3">
+            <div class="col-6 px-0 px-md-2 px-lg-0">
+              <h5 class="m-0">Imsak</h5>
+              <h4 class="waktu m-0" style="font-weight: 700;">-</h4>
+            </div>
+            <div class="col-6 ps-3 pe-0 text-center">
+              <img src="img/imsak.webp" class="jadwal-icon">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="jadwal subuh row p-3">
+            <div class="col-6 px-0 px-md-2 px-lg-0">
+              <h5 class="m-0">Subuh</h6>
+                <h4 class="waktu m-0" style="font-weight: 700;">-</h4>
+            </div>
+            <div class="col-6 ps-3 pe-0 text-center">
+              <img src="img/subuh.webp" class="jadwal-icon" style="margin-bottom: -10px;">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="jadwal terbit row p-3">
+            <div class="col-6 px-0 px-md-2 px-lg-0">
+              <h5 class="m-0">Terbit</h5>
+              <h4 class="waktu m-0" style="font-weight: 700;">-</h4>
+            </div>
+            <div class="col-6 ps-3 pe-0 text-center">
+              <img src="img/terbit.webp" class="jadwal-icon" style="margin-bottom: -5px;">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="jadwal dhuha row p-3">
+            <div class="col-6 px-0 px-md-2 px-lg-0">
+              <h5 class="m-0">Dhuha</h5>
+              <h4 class="waktu m-0" style="font-weight: 700;">-</h4>
+            </div>
+            <div class="col-6 ps-3 pe-0 text-center">
+              <img src="img/dhuha.webp" class="jadwal-icon">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="jadwal dzuhur row p-3">
+            <div class="col-6 px-0 px-md-2 px-lg-0">
+              <h5 class="m-0">Dzuhur</h5>
+              <h4 class="waktu m-0" style="font-weight: 700;">-</h4>
+            </div>
+            <div class="col-6 ps-3 pe-0 text-center">
+              <img src="img/dzuhur.webp" class="jadwal-icon">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="jadwal ashar row p-3">
+            <div class="col-6 px-0 px-md-2 px-lg-0">
+              <h5 class="m-0">Ashar</h5>
+              <h4 class="waktu m-0" style="font-weight: 700;">-</h4>
+            </div>
+            <div class="col-6 ps-3 pe-0 text-center">
+              <img src="img/ashar.webp" class="jadwal-icon">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="jadwal maghrib row p-3">
+            <div class="col-6 px-0 px-md-2 px-lg-0">
+              <h5 class="m-0">Maghrib</h5>
+              <h4 class="waktu m-0" style="font-weight: 700;">-</h4>
+            </div>
+            <div class="col-6 ps-3 pe-0 text-center">
+              <img src="img/maghrib.webp" class="jadwal-icon">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="jadwal isya row p-3">
+            <div class="col-6 px-0 px-md-2 px-lg-0">
+              <h5 class="m-0">Isya'</h5>
+              <h4 class="waktu m-0" style="font-weight: 700;">-</h4>
+            </div>
+            <div class="col-6 ps-3 pe-0 text-center">
+              <img src="img/isya'.webp" class="jadwal-icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Waktu Sholat -->
+  <div class="modal fade" id="daftarKota" tabindex="-1" aria-labelledby="daftarKotaLabel" aria-hidden="true"
+    style="color: var(--blue2);">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="daftarKotaLabel">Daftar Kota</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div id="daftar-kota" class="modal-body daftar-kota">
+          <div class="input-kota fuzzy-search mb-3">
+            <input class="px-3 py-2 input-group" type="text" onclick="this.select()"
+              style="background-color: var(--white); border: 1px solid var(--blue1); border-radius: 3px;"
+              placeholder="Cari Nama Kota / Daerah...">
+          </div>
+          <div class="daftar list px-2" style="letter-spacing: 1px; max-height: 40vh; overflow: auto;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Waktu Sholat -->
+
+  <!-- Satu Ayat -->
+  <section class="satu-ayat py-5 px-3 px-sm-0" style="color: var(--blue2);">
+    <div class="container mx-auto mt-5">
+      <h3 class="mb-4" style="font-weight: 600;">Satu Ayat Untukmu</h3>
+      <h2 class="ayat text-end mb-4" style="line-height: 3.2rem;"></h2>
+      <h5 class="surat mb-2" style="font-weight: 600;"></h5>
+      <h6 class="arti" style="width: 80%; line-height: 1.4rem;"></h6>
+    </div>
+  </section>
+  <!-- End Satu Ayat -->
+
+  <!-- tujuan -->
+  <section class="tujuan py-5" style="background-color: #E6F1FF;">
+    <div class="container mx-auto">
+      <h2 class="mb-4" style="font-weight: 700; text-align: center; color: var(--blue2);">
+        Kenapa Pakai Islamic Bit?
+      </h2>
+      <h4 class="mx-auto mb-4" style="text-align: center; color: var(--blue2); width: 90%; max-width: 650px;">
+        Dengan Islamic Bit kamu dapat belajar sekaligus memenuhi
+        kebutuhan Islamimu seperti:
+      </h4>
+      <div class="tujuan-list mx-auto" style="width: 90%; max-width: 750px; color: var(--blue2); letter-spacing: 1px;">
+        <ol>
+          <li>Mengetahui jadwal waktu sholat di Indonesia</li>
+          <li>Dapatkan kata-kata mutiara Islami</li>
+          <li>Membaca Al-Quran</li>
+          <li>Membaca Asmaul Husna</li>
+          <li>Membaca Doa-Doa Harian</li>
+          <li>Membaca Hadits-Hadits Rasulullah</li>
+          <li>Membaca Kisah 25 Nabi & Rasul</li>
+          <li>Membaca Bacaan Tahlil</li>
+          <li>Membaca sholawat-sholawat Nabi</li>
+          <li>Membaca Bacaan & Tuntunan Sholat</li>
+          <li>Mendapatkan pencerahan dari ayat-ayat Al-Quran</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- End tujuan -->
+
+  <!-- User -->
+  <section class="user py-5" style="background-color: #E6F1FF;">
+    <div class="container mx-auto">
+      <h2 class="mb-5" style="font-weight: 700; text-align: center; color: var(--blue2);">
+        Untuk Siapa Saja Islamic Bit?
+      </h2>
+      <div class="user-wrapper row row-cols-1 row-cols-md-2 justify-content-center mx-auto gy-4"
+        style="color: var(--blue2);">
+        <div class="col">
+          <div class="p-4" style="border: 1px solid var(--blue1); border-radius: 6px;">
+            <h4 style="font-weight: 600;">Masyarakat Umum</h4>
+            <h6 style="font-weight: 400;">
+              Kamu dapat mengakses Islamic Bit
+              secara gratis, kapan saja dan dimana saja
+            </h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-4" style="border: 1px solid var(--blue1); border-radius: 6px;">
+            <h4 style="font-weight: 600;">Guru dan Siswa</h4>
+            <h6 style="font-weight: 400;">
+              Dapat dijadikan sebagai sumber
+              pembelajaran agama Islam di sekolah
+            </h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-4" style="border: 1px solid var(--blue1); border-radius: 6px;">
+            <h4 style="font-weight: 600;">Traveler</h4>
+            <h6 style="font-weight: 400;">
+              Para traveler dapat mengetahui jadwal
+              sholat ketika dalam perjalanan
+            </h6>
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-4" style="border: 1px solid var(--blue1); border-radius: 6px;">
+            <h4 style="font-weight: 600;">Pengusaha dan Pekerja</h4>
+            <h6 style="font-weight: 400;">
+              Islamic Bit dapat menjadi alternatif
+              dikala kesibukan bekerja, seperti membaca Al-Quran
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End User -->
+
+  <!-- Share -->
+  <section class="share py-4">
+    <div class="container mx-auto py-4" style="color: var(--blue2);">
+      <h2 class="text-center">بَلِّغُوا عَنِّى وَلَوْ آيَة</h2>
+      <h6 class="text-center mb-3" style="font-weight: 400; font-style: italic;">"Sampaikanlah dariku walau hanya satu
+        ayat"</h6>
+      <div class="sosmed-share"
+        style="display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;">
+        <button class="sosmed button" data-sharer="facebook" data-url="https://islamic-bit.netlify.app"
+          style="background-color: 	#4267B2;">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+        <button class="sosmed button" data-sharer="twiter" data-url="https://islamic-bit.netlify.app"
+          style="background-color: #1DA1F2;">
+          <i class="fab fa-twitter"></i>
+        </button>
+        <button class="sosmed button" data-sharer="whatsapp" data-url="https://islamic-bit.netlify.app"
+          style="background-color: #25D366;">
+          <i class="fab fa-whatsapp"></i>
+        </button>
+        <button class="sosmed button" data-sharer="line" data-url="https://islamic-bit.netlify.app"
+          style="background-color: #00C300;">
+          <i class="fab fa-line"></i>
+        </button>
+        <button class="sosmed button" data-sharer="telegram" data-url="https://islamic-bit.netlify.app"
+          style="background-color: #0088CC;">
+          <i class="fab fa-telegram"></i>
+        </button>
+        <button class="sosmed button" data-sharer="email" data-url="https://islamic-bit.netlify.app"
+          style="background-color: #BB001B;">
+          <i class="far fa-envelope"></i>
+        </button>
+        <button class="sosmed button" onclick="copyLink()" style="background-color: #551A8B;">
+          <i class="fas fa-link"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- End Share -->
+
+  <!-- Footer -->
+  <footer class="py-4" style="background-color: var(--blue1); display: flex; flex-wrap: wrap; justify-content: center; align-items:
+      center; color: var(--white);">
+    <div>
+      <h6 class="m-0 px-4 text-center">
+        Made with love by
+        <a href="https://wahyall.netlify.app" style="color: var(--yellow);">Wahyu Agung Laksono</a>
+      </h6>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+</body>
+
+<!-- JS Source -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+<script src="list.js"></script>
+<script src="hijri-date.js"></script>
+<script src="calendar.js"></script>
+<script src="index.js"></script>
+
+</html>

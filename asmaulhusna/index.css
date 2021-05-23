@@ -1,0 +1,112 @@
+:root {
+   --yellow: #FFD500;
+   --blue1: #003F88;
+   --blue2: #00296B;
+   --white: #F7F7F7;
+   font-size: 12px;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   overflow-x: hidden;
+   background-color: var(--white);
+}
+
+a {
+   text-decoration: none;
+}
+
+.cari-surat {
+   width: 100%;
+}
+
+.asmaul-husna .nama {
+   border-radius: 6px;
+   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .15);
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   color: var(--blue2);
+   background-color: #ffffff;
+}
+
+.back-top {
+   width: 4.2rem;
+   height: 4.2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--white);
+   color: var(--blue2);
+   box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+   position: fixed;
+   bottom: 2rem;
+   right: 1rem;
+   font-size: 2rem;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Breakpoints */
+@media (max-width: 576px) {
+   .asmaul-husna .container {
+      max-width: 400px;
+   }
+}
+
+@media (min-width: 576px) {
+   .cari-surat {
+      width: 100%;
+      max-width: 300px;
+   }
+}
+
+@media (min-width: 768px) {
+   :root {
+      font-size: 14px;
+   }
+
+   .cari-surat {
+      width: 80%;
+      max-width: 400px;
+   }
+}
+
+@media (min-width: 992px) {
+   :root {
+      font-size: 16px;
+   }
+}
+
+@media (min-width: 1200px) {}

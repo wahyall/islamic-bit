@@ -1,0 +1,256 @@
+:root {
+   --yellow: #FFD500;
+   --blue1: #003F88;
+   --blue2: #00296B;
+   --white: #F7F7F7;
+   font-size: 12px;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   overflow-x: hidden;
+   background-color: var(--white);
+}
+
+a {
+   text-decoration: none;
+}
+
+button {
+   border: none;
+   outline: none;
+}
+
+.header .text-header h1 {
+   font-size: 2.5rem;
+}
+
+.header .container {
+   max-width: 450px;
+}
+
+.widget-header {
+   position: absolute;
+   width: 90%;
+   max-width: 650px;
+   background-color: var(--white);
+   bottom: 0;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%, 50%);
+   border-radius: 8px;
+   box-shadow: 0 2rem 1.5rem -1rem rgba(0, 0, 0, .15);
+   color: var(--blue2);
+}
+
+.widget-header-item {
+   padding: 10px 24px;
+   background-color: var(--yellow);
+   border-radius: 6px;
+   border: 2px solid var(--blue1);
+   cursor: pointer;
+}
+
+.widget-header-item img {
+   width: 30px;
+}
+
+.jadwal-wrapper {
+   width: 90%;
+   max-width: 360px;
+}
+
+.jadwal-wrapper .col {
+   display: flex;
+   justify-content: center;
+}
+
+.jadwal {
+   background-color: var(--white);
+   border-radius: 6px;
+   align-items: center;
+   display: inline-flex;
+   width: 100%;
+}
+
+.jadwal-icon {
+   width: 40px;
+   max-width: 100%;
+}
+
+.menu-wrapper,
+.user-wrapper {
+   width: 90%;
+   max-width: 360px;
+}
+
+.tujuan-list li {
+   margin: .5rem 0;
+}
+
+.input-kota input:focus {
+   outline: none;
+}
+
+.daftar-kota .kota {
+   cursor: pointer;
+}
+
+.daftar-kota .kota:hover {
+   background-color: #eaeaea;
+}
+
+.sosmed {
+   border-radius: 50%;
+   width: 2.2rem;
+   height: 2.2rem;
+   color: var(--white);
+   font-size: 1.2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sosmed:active {
+   opacity: .7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Breakpoints */
+@media (min-width: 576px) {
+   .header .text-header h1 {
+      font-size: 3.2rem;
+   }
+
+   .header .container {
+      width: 90%;
+      max-width: 600px;
+   }
+
+   .widget-header {
+      width: 80%;
+      max-width: 600px;
+   }
+
+   .widget-header-item img {
+      width: 40px;
+   }
+
+   .satu-ayat .container {
+      width: 90%;
+      max-width: 100%;
+   }
+
+   .jadwal-wrapper {
+      max-width: 90%;
+   }
+
+   .menu-wrapper,
+   .user-wrapper {
+      max-width: 90%;
+   }
+
+   .jadwal-icon {
+      width: 45px;
+   }
+
+   .share .container {
+      width: 80%;
+   }
+}
+
+@media (min-width: 768px) {
+   :root {
+      font-size: 14px;
+   }
+
+   .header .container {
+      width: 80%;
+      max-width: 620px;
+   }
+
+   .widget-header-item img {
+      width: 50px;
+   }
+
+   .satu-ayat .container,
+   .waktu-sholat .container {
+      width: 80%;
+      max-width: 1000px;
+   }
+
+   .jadwal-icon {
+      width: 50px;
+   }
+
+   .sosmed-share {
+      width: 75%;
+      margin: 0 auto;
+   }
+}
+
+@media (min-width: 992px) {
+   :root {
+      font-size: 16px;
+   }
+
+   .header .container {
+      max-width: 650px;
+   }
+
+   .jadwal-wrapper {
+      width: 100%;
+      max-width: 100%;
+   }
+
+   .jadwal-icon {
+      width: 55px;
+   }
+
+   .share .container {
+      width: 60%;
+   }
+
+   .widget-header {
+      width: 80%;
+      max-width: 700px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .header .container {
+      max-width: 680px;
+   }
+
+   .header .text-header h1 {
+      font-size: 3.5rem;
+   }
+
+   .jadwal-icon {
+      width: 62px;
+   }
+}

@@ -1,0 +1,168 @@
+:root {
+   --yellow: #FFD500;
+   --blue1: #003F88;
+   --blue2: #00296B;
+   --white: #F7F7F7;
+   font-size: 12px;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   overflow-x: hidden;
+   background-color: var(--white);
+}
+
+a {
+   text-decoration: none;
+}
+
+.index-surat {
+   width: 100%;
+}
+
+.daftar-surat .surat {
+   background-color: #ffffff;
+   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .15);
+   border-radius: 6px;
+   display: flex;
+   flex-wrap: nowrap;
+   position: relative;
+   max-width: 400px;
+   margin: 0 auto;
+   margin-bottom: 1.8rem;
+}
+
+#last-read {
+   border: .2rem solid var(--blue1);
+}
+
+.daftar-surat .nomer-surat {
+   font-size: 1.5rem;
+}
+
+.daftar-surat .nama-surat {
+   display: grid;
+   grid-template-columns: 60% 1fr;
+   align-items: center;
+   cursor: pointer;
+}
+
+.daftar-surat .nama-surat .nama {
+   font-size: 1.25rem;
+}
+
+.daftar-surat .info-surat {
+   height: 0;
+   transition: .3s;
+}
+
+.daftar-surat .surat .expand-detail {
+   width: 100%;
+   cursor: pointer;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   right: 50%;
+   transform: translateX(-50%);
+   text-align: center;
+}
+
+.daftar-surat .surat .expand-detail img {
+   width: 1.4rem;
+   margin: .7rem 0;
+   transform: rotateX(180deg);
+   transition: .3s;
+}
+
+.daftar-surat .surat .expand-detail.open img {
+   transform: rotateX(0);
+}
+
+.daftar-surat .surat .bookmark {
+   cursor: pointer;
+   text-align: center;
+   font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Breakpoints */
+@media (min-width: 576px) {
+   .index-surat {
+      width: 300px;
+   }
+
+   .daftar-surat .container {
+      width: 90%;
+   }
+
+   .daftar-surat .surat {
+      max-width: 100%;
+   }
+
+   .daftar-surat .nomer-surat {
+      font-size: 1.75rem;
+   }
+
+   .daftar-surat .nama-surat .nama {
+      font-size: 1.5rem;
+   }
+}
+
+@media (min-width: 768px) {
+   :root {
+      font-size: 14px;
+   }
+
+   .index-surat {
+      width: 380px;
+   }
+
+   .daftar-surat .surat {
+      grid-template-columns: 4rem 1fr;
+   }
+}
+
+@media (min-width: 992px) {
+   :root {
+      font-size: 16px;
+   }
+
+   .index-surat {
+      width: 500px;
+   }
+
+   .daftar-surat .container {
+      max-width: 900px;
+   }
+
+   .daftar-surat .surat {
+      grid-template-columns: 3rem 1fr;
+   }
+}
+
+@media (min-width: 1200px) {
+   .index-surat {
+      width: 600px;
+   }
+}
