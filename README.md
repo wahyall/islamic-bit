@@ -1,4 +1,4 @@
-# islamic-bit
+# Islamic Bite
 Islamic Bit adalah website yang menyediakan kebutuhan islami bagi semua orang.
 
 Fitur:
