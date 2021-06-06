@@ -36,8 +36,17 @@ $('.tanggal .hijriyah').text(`${hijriyahDate} ${hijriyahMonth} ${hijriyahYear} H
 
 
 // Set lokasi default pada bagian jadwal sholat
+let lokasiDefault = JSON.parse(localStorage.getItem('kota-pilihan'));
+if (!lokasiDefault) {
+   lokasiDefault = {
+      name: 'Jakarta',
+      id: 667
+   }
+}
+$('.kota-pilihan').html(lokasiDefault.name);
+
 $.ajax({
-   url: `https://api.banghasan.com/sholat/format/json/jadwal/kota/667/tanggal/${masehiFullDate}`,
+   url: `https://api.banghasan.com/sholat/format/json/jadwal/kota/${lokasiDefault.id}/tanggal/${masehiFullDate}`,
    success: results => {
       const jadwalSholat = results.jadwal.data;
       $('.jadwal.imsak .waktu').text(jadwalSholat.imsak)
@@ -81,6 +90,11 @@ $.ajax({
       $('.kota').on('click', function () {
          $('.kota-pilihan').html($(this).text())
          $('.kota-pilihan').attr('data-id-kota', $(this).data('idKota'))
+
+         localStorage.setItem('kota-pilihan', JSON.stringify({
+            name: $(this).text(),
+            id: $(this).data('idKota')
+         }))
 
          gantiJadwalSholatDaerah($(this).data('idKota'), masehiFullDate);
       })
