@@ -40,7 +40,7 @@ let lokasiDefault = JSON.parse(localStorage.getItem('kota-pilihan'));
 if (!lokasiDefault) {
    lokasiDefault = {
       name: 'Jakarta',
-      id: 667
+      id: 1301
    }
 }
 $('.kota-pilihan').html(lokasiDefault.name);
