@@ -23,7 +23,7 @@ const masehiDay = new Date().getDay()
 const masehiDate = (new Date().getDate()).toString();
 const masehiMonth = (new Date().getMonth() + 1).toString();
 const masehiYear = (new Date().getFullYear()).toString();
-const masehiFullDate = `${masehiYear}-${masehiMonth.length == 1 ? '0' + masehiMonth : masehiMonth}-${masehiDate.length == 1 ? '0' + masehiDate : masehiDate}`;
+const masehiFullDate = `${masehiYear}/${masehiMonth.length == 1 ? '0' + masehiMonth : masehiMonth}/${masehiDate.length == 1 ? '0' + masehiDate : masehiDate}`;
 
 const hijriyahTime = new HijriDate().getTime();
 const hijriyahDate = new HijriDate().getDate();
@@ -46,9 +46,9 @@ if (!lokasiDefault) {
 $('.kota-pilihan').html(lokasiDefault.name);
 
 $.ajax({
-   url: `https://api.banghasan.com/sholat/format/json/jadwal/kota/${lokasiDefault.id}/tanggal/${masehiFullDate}`,
+   url: `https://api.myquran.com/v1/sholat/jadwal/${lokasiDefault.id}/${masehiFullDate}`,
    success: results => {
-      const jadwalSholat = results.jadwal.data;
+      const jadwalSholat = results.data.jadwal;
       $('.jadwal.imsak .waktu').text(jadwalSholat.imsak)
       $('.jadwal.subuh .waktu').text(jadwalSholat.subuh)
       $('.jadwal.terbit .waktu').text(jadwalSholat.terbit)
@@ -62,12 +62,12 @@ $.ajax({
 
 // Set modal daftar kota
 $.ajax({
-   url: 'https://api.banghasan.com/sholat/format/json/kota',
+   url: 'https://api.myquran.com/v1/sholat/kota/semua',
    success: results => {
-      const daftarKota = results.kota;
+      const daftarKota = results;
       let fragmentDaftarKota = '';
       daftarKota.forEach(kota => {
-         let namaKota = kota.nama.split(' ');
+         let namaKota = kota.lokasi.split(' ');
          for (let i = 0; i < namaKota.length; i++) {
             namaKota[i] = namaKota[i].toLowerCase();
             namaKota[i] = namaKota[i].replace(namaKota[i][0], namaKota[i][0].toUpperCase())
@@ -116,7 +116,7 @@ $('.tanggal-wrapper .prev-date').on('click', function () {
    const changedMasehiDate = (new Date(changedMasehiTime).getDate()).toString();
    const changedMasehiMonth = (new Date(changedMasehiTime).getMonth() + 1).toString();
    const changedMasehiYear = (new Date(changedMasehiTime).getFullYear()).toString();
-   const changedMasehiFullDate = `${changedMasehiYear}-${changedMasehiMonth.length == 1 ? '0' + changedMasehiMonth : changedMasehiMonth}-${changedMasehiDate.length == 1 ? '0' + changedMasehiDate : changedMasehiDate}`
+   const changedMasehiFullDate = `${changedMasehiYear}/${changedMasehiMonth.length == 1 ? '0' + changedMasehiMonth : changedMasehiMonth}/${changedMasehiDate.length == 1 ? '0' + changedMasehiDate : changedMasehiDate}`
 
    $('.tanggal .masehi').text(`${MasehiDays[changedMasehiDay]}, ${changedMasehiDate} ${MasehiMonths[changedMasehiMonth]}`)
    $('.tanggal .hijriyah').text(`${changedHijriyahDate} ${changedHijriyahMonth} ${changedHijriyahYear} H`)
@@ -136,7 +136,7 @@ $('.tanggal-wrapper .next-date').on('click', function () {
    const changedMasehiDate = (new Date(changedMasehiTime).getDate()).toString();
    const changedMasehiMonth = (new Date(changedMasehiTime).getMonth() + 1).toString();
    const changedMasehiYear = (new Date(changedMasehiTime).getFullYear()).toString();
-   const changedMasehiFullDate = `${changedMasehiYear}-${changedMasehiMonth.length == 1 ? '0' + changedMasehiMonth : changedMasehiMonth}-${changedMasehiDate.length == 1 ? '0' + changedMasehiDate : changedMasehiDate}`
+   const changedMasehiFullDate = `${changedMasehiYear}/${changedMasehiMonth.length == 1 ? '0' + changedMasehiMonth : changedMasehiMonth}/${changedMasehiDate.length == 1 ? '0' + changedMasehiDate : changedMasehiDate}`
 
    $('.tanggal .masehi').text(`${MasehiDays[changedMasehiDay]}, ${changedMasehiDate} ${MasehiMonths[changedMasehiMonth]}`)
    $('.tanggal .hijriyah').text(`${changedHijriyahDate} ${changedHijriyahMonth} ${changedHijriyahYear} H`)
@@ -157,9 +157,9 @@ function gantiJadwalSholatDaerah(idKota, tanggal) {
 
    // Set waktu sholat di kota pilihan
    $.ajax({
-      url: `https://api.banghasan.com/sholat/format/json/jadwal/kota/${idKota}/tanggal/${tanggal}`,
+      url: `https://api.myquran.com/v1/sholat/jadwal/${idKota}/${tanggal}`,
       success: results => {
-         const jadwalSholat = results.jadwal.data;
+         const jadwalSholat = results.data.jadwal;
          $('.jadwal.imsak .waktu').text(jadwalSholat.imsak)
          $('.jadwal.subuh .waktu').text(jadwalSholat.subuh)
          $('.jadwal.terbit .waktu').text(jadwalSholat.terbit)
