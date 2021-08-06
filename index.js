@@ -44,6 +44,7 @@ if (!lokasiDefault) {
    }
 }
 $('.kota-pilihan').html(lokasiDefault.name);
+$('.kota-pilihan').attr('data-id-kota', lokasiDefault.id);
 
 $.ajax({
    url: `https://api.myquran.com/v1/sholat/jadwal/${lokasiDefault.id}/${masehiFullDate}`,
@@ -118,7 +119,7 @@ $('.tanggal-wrapper .prev-date').on('click', function () {
    const changedMasehiYear = (new Date(changedMasehiTime).getFullYear()).toString();
    const changedMasehiFullDate = `${changedMasehiYear}/${changedMasehiMonth.length == 1 ? '0' + changedMasehiMonth : changedMasehiMonth}/${changedMasehiDate.length == 1 ? '0' + changedMasehiDate : changedMasehiDate}`
 
-   $('.tanggal .masehi').text(`${MasehiDays[changedMasehiDay]}, ${changedMasehiDate} ${MasehiMonths[changedMasehiMonth]}`)
+   $('.tanggal .masehi').text(`${MasehiDays[changedMasehiDay]}, ${changedMasehiDate} ${MasehiMonths[changedMasehiMonth - 1]}`)
    $('.tanggal .hijriyah').text(`${changedHijriyahDate} ${changedHijriyahMonth} ${changedHijriyahYear} H`)
 
    gantiJadwalSholatDaerah($('.kota-pilihan').data('idKota'), changedMasehiFullDate)
@@ -138,7 +139,7 @@ $('.tanggal-wrapper .next-date').on('click', function () {
    const changedMasehiYear = (new Date(changedMasehiTime).getFullYear()).toString();
    const changedMasehiFullDate = `${changedMasehiYear}/${changedMasehiMonth.length == 1 ? '0' + changedMasehiMonth : changedMasehiMonth}/${changedMasehiDate.length == 1 ? '0' + changedMasehiDate : changedMasehiDate}`
 
-   $('.tanggal .masehi').text(`${MasehiDays[changedMasehiDay]}, ${changedMasehiDate} ${MasehiMonths[changedMasehiMonth]}`)
+   $('.tanggal .masehi').text(`${MasehiDays[changedMasehiDay]}, ${changedMasehiDate} ${MasehiMonths[changedMasehiMonth - 1]}`)
    $('.tanggal .hijriyah').text(`${changedHijriyahDate} ${changedHijriyahMonth} ${changedHijriyahYear} H`)
 
    gantiJadwalSholatDaerah($('.kota-pilihan').data('idKota'), changedMasehiFullDate)
@@ -146,6 +147,8 @@ $('.tanggal-wrapper .next-date').on('click', function () {
 
 
 function gantiJadwalSholatDaerah(idKota, tanggal) {
+   console.log(idKota, tanggal);
+
    $('.jadwal.imsak .waktu').text('-')
    $('.jadwal.subuh .waktu').text('-')
    $('.jadwal.terbit .waktu').text('-')
