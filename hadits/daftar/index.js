@@ -5,7 +5,7 @@ const page = param[2].split('=')[1]
 const range = param[3].split('=')[1]
 
 $.ajax({
-   url: `https://api.hadith.sutanlab.id/books/${idPerawi}?range=${range}`,
+   url: `https://api.hadith.gading.dev/books/${idPerawi}?range=${range}`,
    success: results => {
       const namaPerawi = results.data.name
       const dataHadits = results.data.hadiths
